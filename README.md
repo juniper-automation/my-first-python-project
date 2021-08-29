@@ -175,9 +175,11 @@ my-readme    latest    fb0d11560546   4 minutes ago   1.03GB  <<<
 I can run now the following command
 
 ``` > invoke shell ```
-can be exucuted if you are inside the poetry Venv
+
+can be exucuted now to get inside the docker shell
+
 ```sh
- ~/Documents/GIT/my-readme-update  main                                                                                               9s  my-first-python-project-N3TcDpri-py3.9 py
+ ~/Documents/GIT/my-readme-update
 > invoke shell
 Jumping into container, type exit to return to host
 root@bbf8bee31bc6:/home/python# ls
