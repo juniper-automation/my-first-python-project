@@ -176,7 +176,7 @@ I can run now the following command
 
 ``` > invoke shell ```
 
-can be exucuted now to get inside the docker shell
+to get inside the docker shell
 
 ```sh
  ~/Documents/GIT/my-readme-update
