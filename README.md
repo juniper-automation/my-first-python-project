@@ -4,7 +4,7 @@ Python script to download Juniper device configs
 
 #  Installation [Your First Python Project](https://www.youtube.com/watch?v=GHujl7c_-hg&t=7481s) Notes
 
-### Clone your repo:
+firs thing I did was to Clone the git repo:
 
 ```sh
  ~/Documents/GIT
@@ -21,7 +21,8 @@ remote: Total 37 (delta 6), reused 34 (delta 6), pack-reused 0
 Receiving objects: 100% (37/37), 27.93 KiB | 357.00 KiB/s, done.
 Resolving deltas: 100% (6/6), done.
 ```
-I went into the my-first-python-project directory and made a new branch called:  my-readme-update
+
+Then I went into the directory containing my first Python project and created a new branch called: my-readme-update.
 
 ```sh
  ~/Documents/GIT
@@ -30,21 +31,24 @@ I went into the my-first-python-project directory and made a new branch called: 
 Switched to a new branch 'my-readme-update'
  ~/Documents/GIT/my-first-python-project/my-readme-update
 ```
-git status quikcly confirms I am in branch my-readme-update
+
+I quickly confirm that I am in the branch my-readme-update by running git status.
+
  ```sh
  > git status
 On branch my-readme-update
 nothing to commit, working tree clean
  ```
 
-### Using [Poetry](https://youtu.be/GHujl7c_-hg?t=3616)
+### Running App.py Using [Poetry](https://youtu.be/GHujl7c_-hg?t=3616)
 
 I had to install [poetry](https://formulae.brew.sh/formula/poetry) 
 
 ```sh
 > brew install poetry
 ```
-once installed I could then activate my Python Enviroment using poetry shell using the [pyproject.toml](https://github.com/juniper-automation/my-first-python-project/blob/main/pyproject.toml) provided 
+
+Once installed, I was able to activate my Python environment using the poetry shell command line interface.
 
 ```sh
 > poetry shell
@@ -55,8 +59,8 @@ Spawning shell within /Users/vcapp/Library/Caches/pypoetry/virtualenvs/my-first-
  ~/Documents/GIT/my-first-python-project/my-readme-update
 ```
 
- I had then to install all packages to runn app.py
- 
+I then had to install all of the necessary packages in order to run app.py.
+
 ```sh
 > poetry install
 Installing dependencies from lock file
@@ -87,7 +91,7 @@ Package operations: 22 installs, 0 updates, 0 removals
   • Installing python-dotenv (0.19.0)
  ```
  
-I got all the packages that was provided for me in the *pyproject.toml*
+All of the packages that were made available to me through the *pyproject.toml* file.
 
 ```sh
 > pip freeze
@@ -119,7 +123,7 @@ yamlordereddictloader @ file:///Users/vcapp/Library/Caches/pypoetry/artifacts/4e
 
 ## Using [Docker](https://youtu.be/GHujl7c_-hg?t=4892)
 
-This app  is very easy to install and deploy in a Docker container.
+It is very simple to install and deploy this application in a Docker container.
 
 in my case I had to install Docker [Desktop](https://docs.docker.com/desktop/mac/install/)  for a MAC with Intell Chip 
 ```sh
@@ -161,7 +165,7 @@ and used at line 45 of the Dockerfile  [COPY .env /home/python](https://github.c
  ~/Documents/GIT/my-first-python-project  my-readme-update
 ```
 
-Now I had my Docker Image 
+Now I had my Docker Image, which was created based on the parameters specified in the DockerFile.
 
 ```sh
 > docker images
@@ -173,8 +177,13 @@ I can run now the following command
 ``` > invoke shell ```
 can be exucuted if you are inside the poetry Venv
 ```sh
-> poetry shell
-Spawning shell within /Users/vcapp/Library/Caches/pypoetry/virtualenvs/my-first-python-project-NEWmLQ26-py3.9
+ ~/Documents/GIT/my-readme-update  main                                                                                               9s  my-first-python-project-N3TcDpri-py3.9 py
+> invoke shell
+Jumping into container, type exit to return to host
+root@bbf8bee31bc6:/home/python# ls
+Dockerfile  LICENSE  README.md	app.py	backups  poetry.lock  pyproject.toml  tasks.py
+root@bbf8bee31bc6:/home/python#
+
 ```
 
 
