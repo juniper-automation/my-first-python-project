@@ -2,7 +2,7 @@
 Python script to download Juniper device configs
 
 
-#  Installation [Your First Python Project](https://www.youtube.com/watch?v=GHujl7c_-hg&t=7481s) Notes
+# [Your First Python Project](https://www.youtube.com/watch?v=GHujl7c_-hg&t=7481s) Notes
 
 firs thing I did was to Clone the git repo:
 
