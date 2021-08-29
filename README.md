@@ -7,7 +7,7 @@ Python script to download Juniper device configs
 ### Clone your repo:
 
 ```sh
- ~/Documents/GIT
+~/Documents/GIT
 > git clone git@github.com:juniper-automation/my-first-python-project.git
 Cloning into 'my-first-python-project'...
 The authenticity of host 'github.com (140.82.121.4)' can't be established.
@@ -24,7 +24,7 @@ Resolving deltas: 100% (6/6), done.
 I went into the my-first-python-project directory and made a new branch called:  my-readme-update
 
 ```sh
- ~/Documents/GIT
+~/Documents/GIT
 > cd my-first-python-project
 > git checkout -b my-readme-update
 Switched to a new branch 'my-readme-update'
